@@ -25,31 +25,33 @@ Only upload `index.html`. The questions and answer key inside it are encrypted.
 On the scoreboard: tap a team's name to give them the turn, use **− / +** to add or remove points, and use **◀ ▶** to move a token.
 **Space bar** rolls the die.
 
+## Student screens
+Each student sees their name and locked team, any role they have this turn, the 3D die, a **live copy of the game board** (every team's token, with their own team circled and the rolling team pulsing), the current question, and the scoreboard. Tokens hop along the student boards at the same time as yours.
+
 ## How a turn works
 1. **Roll.** The team's 🎲 dice roller taps **Roll** on their device (or you press Roll). The 3D die tumbles, lands, and the token hops space by space. Nobody can roll again until the turn is finished.
-2. **Question for every team.** Each team has its own answer area:
-   - The ✏️ **answer writer** enters the team's answer. Teammates watch it take shape live on their own devices.
-   - The 📖 **question reader** reads the question aloud to the team.
-   - The 🎤 **spokesperson** gets ready to explain.
-   - Your screen shows which teams are **Waiting**, **Working…**, or **Submitted ✓**. Answers stay hidden until you reveal them.
-   - Submitted answers are locked. Use **Reopen** (for one team) or **Reopen submissions** (for everyone) to unlock them.
+2. **Every student answers every question** on their own device, whatever their role, and taps **Lock in my answer**.
+   - The 📖 **question reader** also reads the question aloud, and the 🎤 **spokesperson** gets ready to explain the team's thinking.
+   - Your screen shows each team's progress (for example **4 / 6 answered**). Each student sees their own team's progress.
+   - Answers stay hidden until you reveal them. Locked answers can't be changed unless you use **Reopen team** or **Reopen submissions**.
    - The optional timer counts down on every screen, and when it runs out, submissions lock.
-3. **Reveal answers** shows every team's answer on your screen and on student devices.
-4. **Show correct answer** highlights the right answer, scores every team automatically, and shows the points each team earned.
-   - Use **Mark correct / Mark wrong / −1 / +1** on any team's card to adjust a score by hand.
+3. **Reveal answers** shows how each team answered: vote counts for multiple choice and true/false, or the most common answer for other types. Open **Every student's answer** to see each student's answer by name.
+4. **Show correct answer** highlights the right answer, scores everyone automatically, and shows each team's points.
+   - **A team's points come from its members' average score.** Every student who's connected counts, so a student who doesn't answer counts as zero. That keeps everyone participating.
+   - Use **Count as correct** next to any student (handy for an unusual typed answer that's still right), or **Mark all correct / Mark wrong / −1 / +1** on a team's card.
 5. **Continue to the board** returns to the board and moves to the next team. Nothing advances on its own.
 
 ## Points
 - Quick questions (multiple choice, true/false, type the answer): **2 points**. Drag questions (word bank, order, match, sort): **3 points**. Part 6 bonus questions: **5 points**.
 - Partly correct drag answers earn partial points.
 - **Challenge ×2 spaces:** the first team to reach each new part triggers double points for everyone.
-- The team that landed on the space earns **+1 bonus point** if they're fully correct.
+- The team that landed on the space earns **+1 bonus point** if they're 80% correct or better.
 - **Plot Twists** move teams or award points. Finishing earns **+5, +3, then +1**.
 
 ## Teams & roles
 - Students are placed on teams automatically so teams stay even, and they're **locked in**. Refreshing or rejoining with the same name puts them back on their team.
-- Roles rotate automatically. The dice roller changes every roll, and the reader, writer, and spokesperson change every question, so no one repeats the same job back to back.
-- Absent students are skipped. If a writer drops offline, the next teammate takes over and their draft is kept.
+- Roles are extra jobs on top of answering. Everyone still answers every question. The dice roller changes every roll, and the question reader and spokesperson change every question, so no one repeats the same job back to back.
+- Absent students are skipped. A student who closes the game drops off their team's count within about 15 seconds, so their team isn't penalized.
 - Open **Teams & roles** to see everyone, change any role, turn student rolling on or off, or remove a student (✕ twice).
 
 ## Good to know
