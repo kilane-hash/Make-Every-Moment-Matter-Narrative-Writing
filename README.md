@@ -1,44 +1,58 @@
 # Narrative Writing Board Game
 
-A 6-team board game with 27 narrative-writing questions. The teacher hosts the board, and students join from their own devices with a game code.
+A live, team-based board game with 27 auto-scored narrative-writing questions. You run it from a password-protected teacher screen, and students play on their own devices.
 
-## Put it on GitHub Pages (one time, about 5 minutes)
+## Put it on GitHub Pages
+1. In your GitHub repository, upload `index.html` (replace the old one) and commit.
+2. If Pages isn't on yet: **Settings → Pages → Deploy from a branch → `main` / root → Save**.
+3. Your game lives at `https://YOUR-USERNAME.github.io/REPO-NAME/`.
 
-1. Sign in at github.com and click **New repository** (the green **New** button).
-2. Name it something like `narrative-board-game`. Set it to **Public**. Click **Create repository**.
-3. On the next page, click **uploading an existing file**. Drag in `index.html` (and this README if you like). Click **Commit changes**.
-4. Go to **Settings → Pages**. Under **Build and deployment**, set **Source** to *Deploy from a branch*. Set **Branch** to `main` and the folder to `/ (root)`, then click **Save**.
-5. Wait 1–2 minutes and refresh the Pages settings. Your site address appears at the top, for example:
-   `https://YOUR-USERNAME.github.io/narrative-board-game/`
+Only upload `index.html`. The questions and answer key inside it are encrypted.
 
-To update the game later, upload a new `index.html` to the same repository. GitHub Pages republishes it within a minute or two.
+## Teacher screen
+- Open `…/REPO-NAME/?teacher` and sign in. **Starting password: `WriteOn2026`.** Change it under **Teams & roles → Teacher password** (it downloads a new `index.html` to upload).
+- Share this window on Zoom. **The board stays on screen the whole game.** Questions slide in beside it, and the scoreboard (points and positions) stays across the top.
 
-## Running the game in class
+### Control bar (bottom of the screen)
+| Group | Buttons |
+|---|---|
+| Game | Start · Pause / Resume · End game · Reset game (tap twice; erases everything and re-splits teams) |
+| Turn | Roll die · Next question (ask a question without rolling) · Pass turn |
+| Question | Timer length · Start timer · Reveal answers · Show correct answer · Reopen submissions · Skip question |
+| Call on | 🎤 Random team (picks a team's spokesperson) · 🎤 Random student |
+| Tools | Undo (steps back through rolls, scoring, moves and point changes) · Teams & roles |
 
-**Teacher (screen-share this window):**
-- Open `https://YOUR-USERNAME.github.io/narrative-board-game/?host`
-  (or open the site and click **I'm the teacher**). Bookmark this link.
-- The setup screen shows a **game code** and a **join link**. Paste the join link into Zoom chat.
-- Name your teams and post the team list. Students pick their team after joining.
-- Click **Start the game**.
+On the scoreboard: tap a team's name to give them the turn, use **− / +** to add or remove points, and use **◀ ▶** to move a token.
+**Space bar** rolls the die.
 
-**Students:**
-- Open the join link (or the site, then **I'm a student**). Type the code and their first name, then pick a team.
-- When it's their team's turn, a **Roll for your team!** button appears.
-- When a question comes up for their team (or a Checkpoint for the whole class), they type an answer and tap **Send**. Answers show up on the teacher's card.
-- When the teacher presses **Show the answer**, students see the answer too.
+## How a turn works
+1. **Roll.** The team's 🎲 dice roller taps **Roll** on their device (or you press Roll). The 3D die tumbles, lands, and the token hops space by space. Nobody can roll again until the turn is finished.
+2. **Question for every team.** Each team has its own answer area:
+   - The ✏️ **answer writer** enters the team's answer. Teammates watch it take shape live on their own devices.
+   - The 📖 **question reader** reads the question aloud to the team.
+   - The 🎤 **spokesperson** gets ready to explain.
+   - Your screen shows which teams are **Waiting**, **Working…**, or **Submitted ✓**. Answers stay hidden until you reveal them.
+   - Submitted answers are locked. Use **Reopen** (for one team) or **Reopen submissions** (for everyone) to unlock them.
+   - The optional timer counts down on every screen, and when it runs out, submissions lock.
+3. **Reveal answers** shows every team's answer on your screen and on student devices.
+4. **Show correct answer** highlights the right answer, scores every team automatically, and shows the points each team earned.
+   - Use **Mark correct / Mark wrong / −1 / +1** on any team's card to adjust a score by hand.
+5. **Continue to the board** returns to the board and moves to the next team. Nothing advances on its own.
 
-**On your screen during each question:**
-- Student answers appear under the question with their name and team. Your team's answers are listed first.
-- Click **+1 ★** next to any answer to give stars to that student's team (Part 6 bonus questions give double).
-- You can still roll yourself, give stars with the buttons at the bottom of the card, or fix scores on the scoreboard.
+## Points
+- Quick questions (multiple choice, true/false, type the answer): **2 points**. Drag questions (word bank, order, match, sort): **3 points**. Part 6 bonus questions: **5 points**.
+- Partly correct drag answers earn partial points.
+- **Challenge ×2 spaces:** the first team to reach each new part triggers double points for everyone.
+- The team that landed on the space earns **+1 bonus point** if they're fully correct.
+- **Plot Twists** move teams or award points. Finishing earns **+5, +3, then +1**.
+
+## Teams & roles
+- Students are placed on teams automatically so teams stay even, and they're **locked in**. Refreshing or rejoining with the same name puts them back on their team.
+- Roles rotate automatically. The dice roller changes every roll, and the reader, writer, and spokesperson change every question, so no one repeats the same job back to back.
+- Absent students are skipped. If a writer drops offline, the next teammate takes over and their draft is kept.
+- Open **Teams & roles** to see everyone, change any role, turn student rolling on or off, or remove a student (✕ twice).
 
 ## Good to know
-
-- **Keep the teacher tab open and in front.** Students connect directly to your browser. If you close or refresh the page, the game and the code are kept, and students reconnect on their own within a few seconds.
-- **New code** (in the "Students join" box) disconnects everyone and makes a fresh code. Use it only if you need to.
-- **New game** resets the board, but keeps the same code.
-- Chrome or Edge works best for the teacher computer. Students can use any modern browser, Chromebooks and phones included.
-- Connections go through the free public PeerJS server (0.peerjs.com). If a school network blocks it, students see "Connection trouble." The board still works on your screen, and students can answer in Zoom chat.
-- With a very large class (100+), students on the same team can share one device, or you can keep chat as a backup. Every connected student is a live link to your computer.
-- Students can see the answers if they open the page's source code. That's normal for a game that runs entirely in the browser.
+- The game saves as you play. If you refresh, the board, scores, and teams come back, and students reconnect on their own with their answers kept.
+- Use Chrome or Edge on the teacher computer, and keep the tab open. Students connect straight to it through the free PeerJS service. Test with one student device on the school network before class.
+- Works on computers, Chromebooks, tablets, and phones. Every drag question also works by tapping a card, then tapping where it goes.
